@@ -1,3 +1,8 @@
 *{
     box-sizing: border-box;
 }
+
+header{
+    max-width: 100vh;
+    height: auto;
+}
