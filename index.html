@@ -9,15 +9,98 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     
+    <!-- Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
     <header>
+        <div class="headerContent quicksand-bold">
 
+            <div class="logo">
+                <img src="assets/images/SunEcoTravelLogo_2.png" alt="" id="headerLogo">
+            </div>
+
+            <ul id="topNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Packages</a></li>
+                <li><a href="destinations.html">Pricing</a></li>
+                <li><a href="bookings.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
     </header>
 
-    <div class="content">
+    <div class="banner">
+        <!-- Slide 1 -->
+        <div class="banner-slide" id="slide-1">
+            <div class="slide-content">
+                <div class="bannerHeading">Have fun in the sun with Sun Eco Travel</div>
+                <div class="bannerText">
+                    <p>
+                        At Sun Eco Travel, we offer sustainable and personalized travel 
+                        experiences that preserve the planet’s beauty while catering to all budgets.
+                    </p><br/>
+                    <a href="about.html" class="CTA">Learn more</a>
+                </div>
+            </div>
+            
+        </div>
 
+        <!-- Slide 2 -->
+        <div class="banner-slide" id="slide-2">
+            <div class="slide-content">
+                <div class="bannerHeading">Fun need not break the bank</div>
+                    <div class="bannerText">
+                        <p>
+                            Whether you're seeking an affordable getaway or a 
+                            luxury eco-tourism escape, we’ve got something for you.
+                        </p><br/>
+                        <a href="bookings.html" class="CTA">Book Now!</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="banner-slide" id="slide-3">
+            <div class="slide-content">
+                <div class="bannerHeading">Join THE GREEN TRAVEL REVOLUTION today!</div>
+                <div class="bannerText">
+                    <p>
+                        At Sun Eco Travel, we offer sustainable and personalized travel 
+                        experiences that preserve the planet’s beauty while catering to all budgets.
+                    </p><br/>
+                    <a href="bookings.html" class="CTA">Start Your Eco-Friendly Adventure!</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div><!-- end of banner -->
+    <!-- Progress dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="content">
+        
     </div>
 
     <footer>
