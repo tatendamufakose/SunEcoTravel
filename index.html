@@ -44,7 +44,7 @@
 
     <div class="banner">
         <!-- Slide 1 -->
-        <div class="banner-slide" id="slide-1">
+        <div class="banner-slide fade" id="slide-1">
             <div class="slide-content">
                 <div class="bannerHeading">Have fun in the sun with Sun Eco Travel</div>
                 <div class="bannerText">
@@ -59,7 +59,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="banner-slide" id="slide-2">
+        <div class="banner-slide fade" id="slide-2">
             <div class="slide-content">
                 <div class="bannerHeading">Fun need not break the bank</div>
                     <div class="bannerText">
@@ -73,7 +73,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="banner-slide" id="slide-3">
+        <div class="banner-slide fade" id="slide-3">
             <div class="slide-content">
                 <div class="bannerHeading">Join THE GREEN TRAVEL REVOLUTION today!</div>
                 <div class="bannerText">
@@ -106,5 +106,41 @@
     <footer>
         
     </footer>
+    <script>
+        let slideIndex = 1;
+        
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("banner-slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            
+            if (n < 1) {slideIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "flex";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
