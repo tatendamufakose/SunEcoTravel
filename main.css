@@ -14,7 +14,7 @@ header{
     height: 100px;
     padding: 5px;
     background-color: rgb(255,255,255);
-    align-content: center;
+    box-align: center;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
@@ -129,13 +129,13 @@ a{
 
 /* Positioning the "next button" to the right */
 .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, a slightly see-through black background color */
 .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 /* The dots/bullets/indicators */
@@ -156,11 +156,48 @@ background-color: rgba(0,0,0,0.8);
 
 /* Fading animation for banner slides */
 .fade {
-animation-name: fade;
-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
+
+/* Content Sections */
+section{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+}
+
+.section-content{
+    margin: 25px 10px;
+}
+
+/* About section */
+#about-section{
+    background-color: lightcoral;
+    top: 625px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about-section img{
+    width: 15%;
+    height: auto;
+}
+
+/* Why choose us Section */
+#why-section{
+    background-color: beige;
+    position:relative;
+    top:auto;
+}
+
+
