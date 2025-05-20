@@ -167,7 +167,7 @@ a{
 
 /* Content Sections */
 section{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     padding: 25px;
@@ -175,17 +175,18 @@ section{
 
 .section-content{
     margin: 25px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* About section */
 #about-section{
-    background-color: lightcoral;
-    top: 625px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 15px;
 }
 
 #about-section img{
@@ -197,7 +198,41 @@ section{
 #why-section{
     background-color: beige;
     position:relative;
-    top:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+.value-proposition{
+    display: flex;
+    flex-direction: row;
+    margin: 20px; 
+}
+
+.value-card:hover{
+    animation-name: border-shadow;
+    animation-duration: 10s;
+    
+}
+
+@keyframes border-shadow {
+    from {
+        box-shadow: none;
+        background-color: aquamarine;
+    }
+    to{
+        box-shadow: 1px 1px #888888;
+        background-color: aquamarine;
+        transform: scale(110%);
+    }
+}
+
+.value-card  img{
+    border-radius: 25%;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
 
